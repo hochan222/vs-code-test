@@ -1,22 +1,17 @@
 var express = require('express');
+var todoController = require('./controllers/todoController');
 
 var app = express();
 
+//set up template engine
 app.set('view engine', 'ejs');
-app.use('/assets', express.static('public'));
 
-app.get('/', function(req,res) {
-    res.sendFile(__dirname + '/index.html');
-});
+//static files
+app.use(express.static('./public'));
 
-app.get('/contact', function(req,res) {
-    res.send('contact');
-});
+//fire controllers
+todoController(app);
 
-app.get('/profile/:id', function(req,res) {
-    res.render('profile', {person: req.params.id});
-});
-
-
+//listen
 app.listen(3000);
-
+console.log('You are listening to port 3000');
