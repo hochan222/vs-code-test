@@ -1,6 +1,6 @@
 <template>
-  <v-app class="deep-purple">
-
+  <v-app>
+    
     <router-view></router-view>
     
     <!-- <v-content></v-content> -->

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="deep-purple">
     <v-layout
       align-center
       column
@@ -27,7 +27,7 @@
           </v-card-title>
 
           <v-card-actions>
-            <v-btn outline color="deep-purple darken-4"><router-link :to="'chat'">Join</router-link></v-btn>
+            <v-btn outline color="deep-purple darken-4"><router-link :to="'chat'" class="deep-purple--text text--darken-4">Join</router-link></v-btn>
           </v-card-actions>
         </v-layout>
       </v-card>
@@ -48,7 +48,6 @@ export default {
 
 <style>
   a{
-    color: #311B92;
     text-decoration: none;
   }
 </style>
