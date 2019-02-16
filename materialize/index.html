@@ -146,17 +146,38 @@
                 <i class="material-icons circle blue">person</i>
                 <span class="title">Bowser</span>
                 <p class="grey-text">black-belt</p>
-                <a href="#" class="secondary-content">
+                <a href="#" class="secondary-content"> 
                     <i class="material-icons blue-text">email</i>
                 </a>
             </li>
         </ul>
+    </div>
+    <!-- modals -->
+    <div class="container">
+        <h2>Modals</h2>
+
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms & Conditions</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tortor sit amet ante sodales scelerisque non eu nunc. Phasellus tristique urna sit amet accumsan dignissim. Nam pharetra lobortis tincidunt. Pellentesque congue, nisi quis finibus iaculis, erat augue dictum ante, eget iaculis quam justo in orci. Pellentesque convallis felis et commodo blandit. Mauris sagittis purus et tellus tincidunt, nec pellentesque ipsum sagittis. Donec vel pharetra risus, ac sodales erat. Maecenas ex ipsum, volutpat ac porttitor sit amet, maximus et quam. Nam ac iaculis sapien.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn orange">Agree & Close</a>
+            </div>
+        </div>
     </div>
 
     <script>
     $(document).ready(function(){
         $('.sidenav').sidenav();
     })    
+    $(document).ready(function(){
+        $('.modal').modal();
+    });
 </script>
 </body>
 </html>
