@@ -135,7 +135,54 @@
     </div>
   </div>
   <!-- contact form -->
-
+  <section class="section container" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tortor sit amet ante sodales scelerisque non eu nunc. Phasellus tristique urna sit amet accumsan dignissim. Nam pharetra lobortis tincidunt. Pellentesque congue, nisi quis finibus iaculis, erat augue dictum ante, eget iaculis quam justo in orci. Pellentesque convallis felis et commodo blandit. Mauris sagittis purus et tellus tincidunt, nec pellentesque ipsum sagittis. Donec vel pharetra risus, ac sodales erat. Maecenas ex ipsum, volutpat ac porttitor sit amet, maximus et quam. Nam ac iaculis sapien.
+            Nunc</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <!-- email -->
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <!-- message -->
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">Your message</label>
+          </div>
+          <!-- datepicker -->
+          <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services required...</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   <!-- footer -->
 
   <!-- Compiled and minified JavaScript -->
@@ -147,6 +194,9 @@
       $('.materialboxed').materialbox();
       $('.parallax').parallax();
       $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
     });
   </script>
 </body>
