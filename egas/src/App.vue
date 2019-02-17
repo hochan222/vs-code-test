@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    
+    <v-img src="/1.jpg"></v-img>
     <router-view></router-view>
     
     <!-- <v-content></v-content> -->

@@ -27,7 +27,7 @@
           </v-card-title>
 
           <v-card-actions>
-            <v-btn outline color="deep-purple darken-4"><router-link :to="'chat'" class="deep-purple--text text--darken-4">Join</router-link></v-btn>
+            <v-btn outline color="deep-purple darken-4"><router-link :to="'picture'" class="deep-purple--text text--darken-4">Join</router-link></v-btn>
           </v-card-actions>
         </v-layout>
       </v-card>
