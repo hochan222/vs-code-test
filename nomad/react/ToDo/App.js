@@ -36,6 +36,11 @@ export default class App extends React.Component {
       newToDo: text
     })
   }
+  _loadToDos = () => {
+    this.setState({
+      loadedToDos: true
+    })
+  }
 }
 
 const styles = StyleSheet.create({
