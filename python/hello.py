@@ -5,7 +5,3 @@ c = a ** b
 d = b // a
 
 print(c)
-print(d)
-
-
-
